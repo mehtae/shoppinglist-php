@@ -8,6 +8,8 @@ function getItems() {
     }
     
     try {
+
+        //ADD OR REMOVE PORT IF NEEDED!!!
         $db = new PDO('mysql:host=localhost;port=80;dbname=shoppinglist;charset=utf8','root','');
         $sql = "select * from item";
         $query = $db->query($sql);
